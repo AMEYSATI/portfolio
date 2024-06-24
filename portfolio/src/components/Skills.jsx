@@ -29,8 +29,8 @@ function Skills() {
   const getRandomPosition = () => {
     let x, y;
     do {
-      x = Math.floor(Math.random() * 90) + 5; // 5% to 95% to avoid edges
-      y = Math.floor(Math.random() * 90) + 5; // 5% to 95% to avoid edges
+      x = Math.floor(Math.random() * 70) + 15; // Adjusted range to 15% - 85%
+      y = Math.floor(Math.random() * 70) + 15; // Adjusted range to 15% - 85%
     } while (isInCentralExclusionZone(x, y));
 
     return { left: `${x}%`, top: `${y}%` };
@@ -38,8 +38,7 @@ function Skills() {
 
   const isInCentralExclusionZone = (x, y) => {
     const centralZone = 20; // Define the central exclusion zone as 20% around the center
-    return x > (50 - centralZone / 2) && x < (50 + centralZone / 2) &&
-           y > (50 - centralZone / 2) && y < (50 + centralZone / 2);
+    return x > 30 && x < 70 && y > 30 && y < 70; // Adjust these values as needed
   };
 
   const isOverlapping = (pos1, pos2) => {

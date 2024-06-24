@@ -1,38 +1,37 @@
 .parent-skill {
-    min-height: 75vh;
-    background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    
-  }
-  
-  .skill-item {
-    position: absolute;
-    padding: 10px 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    color: black;
-    font-size: 1rem;
-    transition: transform 0.3s;
-    cursor: pointer;
-  }
-  
-  .skill-item:hover {
-    transform: scale(1.1);
-  }
+  min-height: 75vh;
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Prevent overflow */
+}
 
-  .heading-skills{
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 1000;
-    font-style: normal;
-    color: black;
-  }
-  
+.skill-item {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: black;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+.heading-skills {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  color: black;
+  position: relative; /* Ensure heading stays above skill items */
+  z-index: 1; /* Ensure heading is above skill items */
+}
+
