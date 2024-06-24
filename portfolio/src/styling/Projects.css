@@ -1,0 +1,49 @@
+.oldest {
+    border: 75px solid #D7FFFE ;
+    
+}
+.title{
+    display: flex;
+    justify-content: center;
+    background-color: #D7FFFE ;
+    margin:0;
+    padding-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-style: normal;
+    color: black;
+}
+
+.carousel-item {
+    min-height: 75vh;
+    height: 32rem;
+    background: #000;
+    color: white;
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 50px;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}

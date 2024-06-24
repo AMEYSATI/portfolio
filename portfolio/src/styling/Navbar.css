@@ -1,0 +1,12 @@
+.navbar-brand{
+    padding-left: 25px;
+}
+
+.custom-navbar {
+    background-color: #D7FFFE;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+}
